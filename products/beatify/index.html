@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beatify 是一款开源、免费的桌面音乐播放器，支持本地音乐库、WebDAV、FLAC、MP3、同步歌词，并提供 macOS、Windows 与 Linux 下载。">
+    <meta name="author" content="Eric54920">
+    <meta name="application-name" content="Beatify">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#f5f7f5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Beatify">
+
+    <link rel="canonical" href="./">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="preload" as="image" href="../../docs/screenshots/home.jpg" type="image/jpeg" fetchpriority="high">
+    <link rel="icon" type="image/svg+xml" href="../../assets/icons/beatify-icon.svg">
+    <link rel="stylesheet" href="../../styles/global.css?v=8">
+    <link rel="stylesheet" href="../../styles/product.css?v=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Beatify">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="Beatify｜本地与 WebDAV 桌面音乐播放器">
+    <meta property="og:description" content="开源、免费的桌面音乐播放器，支持本地音乐库、WebDAV、多格式音频、逐行歌词与三平台下载。">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
+    <meta property="og:image:width" content="2864">
+    <meta property="og:image:height" content="1904">
+    <meta property="og:image:alt" content="Beatify 桌面音乐播放器主页界面">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Beatify｜本地与 WebDAV 桌面音乐播放器">
+    <meta name="twitter:description" content="开源、免费的桌面音乐播放器，支持本地音乐库、WebDAV、多格式音频、逐行歌词与三平台下载。">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
+
+    <title>Beatify｜本地与 WebDAV 桌面音乐播放器</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Beatify",
+        "alternateName": "Beatify 桌面音乐播放器",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "音乐播放器",
+        "operatingSystem": "macOS, Windows, Linux",
+        "softwareVersion": "0.1.8",
+        "description": "Beatify 是一款开源、免费的桌面音乐播放器，支持本地音乐库、WebDAV、多格式音频和逐行同步歌词。",
+        "isAccessibleForFree": true,
+        "license": "https://github.com/Eric54920/Beatify/blob/main/LICENSE",
+        "codeRepository": "https://github.com/Eric54920/Beatify",
+        "sameAs": "https://github.com/Eric54920/Beatify",
+        "downloadUrl": "https://github.com/Eric54920/Beatify/releases/tag/v0.1.8",
+        "image": "https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "本地音乐资料库",
+          "WebDAV 远程媒体源",
+          "FLAC、MP3、AAC、OGG、Opus、WAV、ALAC 和 AIFF 音频格式",
+          "LRC 逐行同步歌词",
+          "播放队列与播放历史",
+          "浅色、深色和跟随系统主题"
+        ]
+      }
+    </script>
+    <script src="../../scripts/site.js?v=7" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../../index.html" aria-label="返回 Eric54920 产品首页">
+          <img src="../../assets/icons/beatify-icon.svg" alt="" width="34" height="34">
+          <span>Beatify</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="../../index.html#beatify">全部产品</a>
+          <a href="#features">功能</a>
+          <a href="#screens">界面</a>
+          <a href="#download">下载</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="github-link" href="https://github.com/Eric54920/Beatify" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.4a5.8 5.8 0 0 0-1.6-4.1 5.4 5.4 0 0 0-.1-4.1s-1.3-.4-4.1 1.6a13.4 13.4 0 0 0-7 0C5.2 1 3.9 1.4 3.9 1.4a5.4 5.4 0 0 0-.1 4.1A5.8 5.8 0 0 0 2.2 9.6c0 5.7 3.5 7 6.8 7.4A4.8 4.8 0 0 0 8 20.5V22"></path>
+              <path d="M8 19c-3 .9-3-1.5-4-2"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+        <a href="../../index.html#beatify">全部产品</a>
+        <a href="#features">功能</a>
+        <a href="#screens">界面</a>
+        <a href="#download">下载</a>
+        <a href="https://github.com/Eric54920/Beatify" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="eyebrow-mark" aria-hidden="true"></span>
+              本地优先的桌面音乐播放器
+            </p>
+            <h1>把音乐库，<span>留在自己手里。</span></h1>
+            <p class="hero-description">Beatify 为本地文件夹与 WebDAV 而做。没有账号，没有订阅，也没有把你锁进某个平台。打开它，音乐就在那里。</p>
+
+            <div class="hero-actions">
+              <a class="button button-primary js-hero-download" href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_aarch64.dmg">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <path d="m7 10 5 5 5-5"></path>
+                  <path d="M12 15V3"></path>
+                </svg>
+                <span>下载 Beatify</span>
+              </a>
+              <a class="button button-secondary" href="#screens">
+                查看完整界面
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-meta" aria-label="产品信息">
+              <span>macOS</span>
+              <span>Windows</span>
+              <span>Linux</span>
+              <span>MIT 开源</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Beatify 主页界面预览">
+            <div class="hero-accent" aria-hidden="true"></div>
+            <figure class="hero-window">
+              <div class="window-bar">
+                <div class="window-title">
+                  <img src="../../assets/icons/beatify-icon.svg" alt="" width="20" height="20">
+                  <span>Beatify</span>
+                </div>
+                <span class="window-status">主页</span>
+              </div>
+              <img src="../../docs/screenshots/home.jpg" alt="Beatify 本地音乐播放器主页，展示资料库统计、最近播放和每日推荐" width="2864" height="1904" fetchpriority="high" decoding="async">
+            </figure>
+            <div class="lyric-float">
+              <span class="lyric-label">LRC</span>
+              <div>
+                <strong>逐行同步</strong>
+                <small>歌词会跟着播放进度走</small>
+              </div>
+            </div>
+            <div class="hero-timeline" aria-hidden="true">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="format-rail" aria-label="支持的音频格式">
+          <span>FLAC</span>
+          <span>MP3</span>
+          <span>AAC / M4A</span>
+          <span>OGG</span>
+          <span>OPUS</span>
+          <span>WAV</span>
+          <span>ALAC</span>
+          <span>AIFF</span>
+        </div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-heading">
+          <p class="section-kicker">核心体验</p>
+          <h2>本地音乐库与 WebDAV，都在一个播放器里。</h2>
+          <p>常用的入口保持清楚，复杂的事情交给 Beatify。资料库、队列、歌词和外观，都在需要的时候出现。</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon feature-icon-pink">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 20h16"></path>
+                <path d="M6 20V8l5-4v16"></path>
+                <path d="M11 9h5a2 2 0 0 1 2 2v9"></path>
+                <path d="M15 13h3"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="feature-label">资料库</p>
+              <h3>本地文件，远程目录，一个入口。</h3>
+              <p>添加电脑里的音乐文件夹，或连接 WebDAV 服务器。文件变化后，资料库会自动更新。</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon feature-icon-blue">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l10-2v13"></path>
+                <circle cx="6" cy="18" r="3"></circle>
+                <circle cx="16" cy="16" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <p class="feature-label">歌词</p>
+              <h3>歌词贴着音乐走。</h3>
+              <p>读取 LRC 时间轴，全屏歌词会平滑滚动并高亮当前一行，封面则安静地留在背景里。</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon feature-icon-mint">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6h12"></path>
+                <path d="M3 12h10"></path>
+                <path d="M3 18h8"></path>
+                <path d="m17 14 3 3-3 3"></path>
+                <path d="M20 17h-6"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="feature-label">播放队列</p>
+              <h3>接下来听什么，由你决定。</h3>
+              <p>待播与历史固定在侧边栏。随机和循环设置会记住上次的选择，下次打开继续播放。</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon feature-icon-amber">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.9 4.9 1.4 1.4"></path>
+                <path d="m17.7 17.7 1.4 1.4"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m4.9 19.1 1.4-1.4"></path>
+                <path d="m17.7 6.3 1.4-1.4"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="feature-label">外观与语言</p>
+              <h3>按你的习惯使用。</h3>
+              <p>浅色、深色或跟随系统，启动前就完成切换。中文与 English 也可以即时切换，无需重启。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section screens" id="screens">
+        <div class="section-heading screens-heading">
+          <p class="section-kicker">真实界面</p>
+          <h2>一套界面，覆盖整个听歌过程。</h2>
+          <p>从整理资料库到打开全屏歌词，每个视图都保持同一套清楚、安静的信息层级。</p>
+        </div>
+
+        <div class="screen-tabs" role="tablist" aria-label="Beatify 界面预览">
+          <button class="screen-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="screen-panel" data-image="../../docs/screenshots/home.jpg" data-title="主页" data-alt="Beatify 主页，展示资料库统计、最近播放和每日推荐">主页</button>
+          <button class="screen-tab" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" data-image="../../docs/screenshots/library.jpg" data-title="资料库" data-alt="Beatify 资料库，以可排序表格展示曲目">资料库</button>
+          <button class="screen-tab" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" data-image="../../docs/screenshots/album.jpg" data-title="专辑" data-alt="Beatify 专辑页，以网格和曲目列表展示专辑">专辑</button>
+          <button class="screen-tab" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" data-image="../../docs/screenshots/artist.jpg" data-title="艺人" data-alt="Beatify 艺人页，展示艺人列表和详情">艺人</button>
+          <button class="screen-tab" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" data-image="../../docs/screenshots/resource.jpg" data-title="媒体源" data-alt="Beatify 媒体源管理，支持本地文件夹和 WebDAV">媒体源</button>
+          <button class="screen-tab" type="button" role="tab" aria-selected="false" aria-controls="screen-panel" data-image="../../docs/screenshots/lyrics.jpg" data-title="歌词" data-alt="Beatify 全屏同步歌词">歌词</button>
+          <span class="tab-indicator" aria-hidden="true"></span>
+        </div>
+
+        <div class="screen-stage" id="screen-panel" role="tabpanel" tabindex="0">
+          <div class="screen-toolbar">
+            <div class="window-title">
+              <img src="../../assets/icons/beatify-icon.svg" alt="" width="20" height="20">
+              <span>Beatify</span>
+              <span class="window-separator">/</span>
+              <strong id="screen-title">主页</strong>
+            </div>
+            <span class="screen-hint">点击上方切换视图</span>
+          </div>
+          <div class="screen-image-wrap">
+            <img id="screen-image" src="../../docs/screenshots/home.jpg" alt="Beatify 主页，展示资料库统计、最近播放和每日推荐" width="2864" height="1904" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust">
+        <div class="trust-inner">
+          <div class="trust-copy">
+            <p class="section-kicker">你的资料</p>
+            <h2>不需要注册，也不替你保管音乐。</h2>
+          </div>
+          <div class="trust-points">
+            <p><strong>本地存储</strong>资料库数据库、封面缓存与设置都保存在系统应用数据目录中。</p>
+            <p><strong>开源透明</strong>代码采用 MIT 协议，可自由使用、修改和分发。</p>
+            <p><strong>跨平台</strong>同一套 Beatify 可用于 macOS、Windows 和 Linux。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="download" id="download">
+        <div class="download-inner">
+          <div class="download-copy">
+            <p class="section-kicker section-kicker-light">下载 Beatify</p>
+            <h2>安装一次，音乐一直是你的。</h2>
+            <p>选择你的平台，直接下载当前版本。安装包来自项目的 GitHub Releases。</p>
+            <a class="text-link-light" href="https://github.com/Eric54920/Beatify/releases/tag/v0.1.8" target="_blank" rel="noreferrer">
+              查看全部安装包与更新记录
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7"></path>
+                <path d="M7 7h10v10"></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="download-options">
+            <a class="platform-download" href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_aarch64.dmg">
+              <span class="platform-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                  <path d="M8 20h8"></path>
+                  <path d="M12 16v4"></path>
+                </svg>
+              </span>
+              <span class="platform-copy">
+                <strong>macOS</strong>
+                <small>Apple silicon · .dmg</small>
+              </span>
+              <svg class="download-arrow" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+            </a>
+
+            <a class="platform-download" href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_x64-setup.exe">
+              <span class="platform-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                  <path d="M8 20h8"></path>
+                  <path d="M12 16v4"></path>
+                </svg>
+              </span>
+              <span class="platform-copy">
+                <strong>Windows</strong>
+                <small>x64 · 安装程序 .exe</small>
+              </span>
+              <svg class="download-arrow" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+            </a>
+
+            <a class="platform-download" href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_amd64.AppImage">
+              <span class="platform-icon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="12" rx="2"></rect>
+                  <path d="M8 20h8"></path>
+                  <path d="M12 16v4"></path>
+                </svg>
+              </span>
+              <span class="platform-copy">
+                <strong>Linux</strong>
+                <small>x64 · AppImage</small>
+              </span>
+              <svg class="download-arrow" aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v12"></path>
+                <path d="m7 10 5 5 5-5"></path>
+                <path d="M5 21h14"></path>
+              </svg>
+            </a>
+
+            <div class="alternate-downloads">
+              <span>其他格式</span>
+              <a href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_x64_en-US.msi">Windows .msi</a>
+              <a href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify_0.1.8_amd64.deb">Linux .deb</a>
+              <a href="https://github.com/Eric54920/Beatify/releases/download/v0.1.8/Beatify-0.1.8-1.x86_64.rpm">Linux .rpm</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="../../assets/icons/beatify-icon.svg" alt="" width="30" height="30">
+          <div>
+            <strong>Beatify</strong>
+            <span>支持本地音乐库与 WebDAV 的桌面音乐播放器</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/Eric54920/Beatify" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/Eric54920/Beatify/blob/main/LICENSE" target="_blank" rel="noreferrer">MIT License</a>
+          <span>© <span id="current-year">2026</span> Beatify</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

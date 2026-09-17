@@ -1,0 +1,19 @@
+{
+  "name": "Eric54920 Products",
+  "short_name": "Eric54920",
+  "description": "Eric54920 的个人网站，独立设计和开发桌面软件。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f5",
+  "theme_color": "#f5f7f5",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "assets/icons/site-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

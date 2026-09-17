@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eric54920 的个人网站，独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta name="author" content="Eric54920">
+    <meta name="application-name" content="Eric54920">
+    <meta name="color-scheme" content="light">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#eef0ed">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Eric54920">
+
+    <link rel="canonical" href="./">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" as="image" href="docs/screenshots/home.jpg" type="image/jpeg" fetchpriority="high">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/site-mark.svg">
+    <link rel="stylesheet" href="styles/global.css?v=8">
+    <link rel="stylesheet" href="styles/home.css?v=5">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Eric54920">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="Eric54920｜独立软件与桌面工具">
+    <meta property="og:description" content="独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
+    <meta property="og:image:width" content="2864">
+    <meta property="og:image:height" content="1904">
+    <meta property="og:image:alt" content="Beatify 桌面音乐播放器主页界面">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eric54920｜独立软件与桌面工具">
+    <meta name="twitter:description" content="独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
+
+    <title>Eric54920｜独立软件与桌面工具</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "name": "Eric54920",
+        "description": "Eric54920 的个人网站，独立设计和开发桌面软件。",
+        "inLanguage": "zh-CN",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Eric54920",
+          "sameAs": "https://github.com/Eric54920"
+        },
+        "about": {
+          "@type": "SoftwareApplication",
+          "name": "Beatify",
+          "applicationCategory": "MultimediaApplication",
+          "applicationSubCategory": "音乐播放器",
+          "operatingSystem": "macOS, Windows, Linux",
+          "description": "支持本地音乐库、WebDAV、多格式音频和逐行同步歌词的桌面音乐播放器。",
+          "codeRepository": "https://github.com/Eric54920/Beatify",
+          "downloadUrl": "https://github.com/Eric54920/Beatify/releases/tag/v0.1.8",
+          "isAccessibleForFree": true
+        }
+      }
+    </script>
+    <script src="scripts/site.js?v=7" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand personal-brand" href="#top" aria-label="Eric54920 首页">
+          <img src="assets/icons/site-mark.svg" alt="" width="34" height="34">
+          <span>Eric54920</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="#beatify">Beatify</a>
+          <a href="#approach">方式</a>
+          <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="github-link" href="https://github.com/Eric54920" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.4a5.8 5.8 0 0 0-1.6-4.1 5.4 5.4 0 0 0-.1-4.1s-1.3-.4-4.1 1.6a13.4 13.4 0 0 0-7 0C5.2 1 3.9 1.4 3.9 1.4a5.4 5.4 0 0 0-.1 4.1A5.8 5.8 0 0 0 2.2 9.6c0 5.7 3.5 7 6.8 7.4A4.8 4.8 0 0 0 8 20.5V22"></path>
+              <path d="M8 19c-3 .9-3-1.5-4-2"></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+        <a href="#beatify">Beatify</a>
+        <a href="#approach">方式</a>
+        <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="atelier-hero" id="top">
+        <div class="atelier-hero-inner">
+          <div class="atelier-copy">
+            <p class="eyebrow atelier-eyebrow">
+              <span class="atelier-eyebrow-mark" aria-hidden="true"></span>
+              Independent Software
+            </p>
+            <h1>做少一点，<span>做深一点。</span></h1>
+            <p class="atelier-description">独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。</p>
+
+            <div class="atelier-actions">
+              <a class="button button-primary" href="products/beatify/index.html">
+                查看 Beatify
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+              <a class="text-link" href="products/beatify/index.html#download">
+                下载桌面版
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="atelier-meta" aria-label="Beatify 支持平台">
+              <span>macOS</span>
+              <span>Windows</span>
+              <span>Linux</span>
+              <span>Open source</span>
+            </div>
+          </div>
+
+          <div class="atelier-visual" aria-label="Beatify 界面预览">
+            <figure class="atelier-frame">
+              <div class="window-bar">
+                <div class="window-title">
+                  <img src="assets/icons/beatify-icon.svg" alt="" width="20" height="20">
+                  <span>Beatify</span>
+                </div>
+                <span class="window-status">主页</span>
+              </div>
+              <img src="docs/screenshots/home.jpg" alt="Beatify 本地音乐播放器主页界面" width="2864" height="1904" fetchpriority="high" decoding="async">
+              <figcaption>
+                <span>
+                  <strong>Beatify</strong>
+                  <small>Desktop music player</small>
+                </span>
+                <span class="frame-meta">v0.1.8</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section atelier-beatify" id="beatify">
+        <div class="atelier-section-heading">
+          <div>
+            <p class="section-kicker">Desktop Software</p>
+            <h2>Beatify</h2>
+          </div>
+          <p>一款面向本地资料库的桌面音乐播放器。资料管理、播放队列和同步歌词都保持清楚、安静、直接。</p>
+        </div>
+
+        <div class="atelier-case">
+          <div class="atelier-case-copy">
+            <span class="case-index">v0.1.8 / RELEASED</span>
+            <h3>你的音乐，留在设备上。</h3>
+            <p>添加本地文件夹或 WebDAV 服务器，Beatify 会在文件变化后更新资料库。封面、播放记录与设置都保存在本机。</p>
+
+            <ul class="atelier-feature-list">
+              <li>本地文件夹与 WebDAV 媒体源</li>
+              <li>FLAC、MP3、AAC、OGG、Opus、WAV、ALAC 和 AIFF</li>
+              <li>LRC 逐行同步歌词与全屏歌词视图</li>
+              <li>持久化播放队列与历史记录</li>
+            </ul>
+
+            <div class="atelier-case-actions">
+              <a class="button button-primary" href="products/beatify/index.html">查看产品详情</a>
+              <a class="text-link" href="products/beatify/index.html#download">
+                下载 Beatify
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="atelier-gallery" aria-label="Beatify 界面截图">
+            <figure class="atelier-shot">
+              <img src="docs/screenshots/library.jpg" alt="Beatify 资料库界面" width="2864" height="1904" loading="lazy" decoding="async">
+            </figure>
+            <figure class="atelier-shot atelier-shot-secondary">
+              <img src="docs/screenshots/lyrics.jpg" alt="Beatify 全屏同步歌词界面" width="1432" height="952" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section atelier-approach" id="approach">
+        <div class="approach-heading">
+          <div>
+            <p class="section-kicker">Approach</p>
+            <h2>先把问题想清楚，再写第一行代码。</h2>
+          </div>
+          <p>产品应该解决问题，同时尊重使用者的数据、时间和注意力。</p>
+        </div>
+
+        <div class="approach-grid">
+          <article class="approach-item">
+            <span>LOCAL FIRST</span>
+            <h3>数据尽量留在本地。</h3>
+            <p>能放在用户设备上的数据，就不要求上传到账号或云端。</p>
+          </article>
+          <article class="approach-item">
+            <span>OPEN</span>
+            <h3>能力透明，边界清楚。</h3>
+            <p>适合开源的产品会开放代码，让功能、限制和隐私边界都可验证。</p>
+          </article>
+          <article class="approach-item">
+            <span>LONG TERM</span>
+            <h3>为长期使用而设计。</h3>
+            <p>减少不必要的依赖和干扰，让软件在发布之后仍然值得维护。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="atelier-cta">
+        <div class="atelier-cta-inner">
+          <div>
+            <p class="section-kicker">Beatify</p>
+            <h2>现在，去听你的音乐。</h2>
+          </div>
+          <div class="atelier-cta-actions">
+            <a class="button button-primary" href="products/beatify/index.html#download">下载 Beatify</a>
+            <a class="text-link" href="products/beatify/index.html">
+              查看完整介绍
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m13 6 6 6-6 6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/icons/site-mark.svg" alt="" width="30" height="30">
+          <div>
+            <strong>Eric54920</strong>
+            <span>Independent software</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#beatify">Beatify</a>
+          <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
+          <span>© <span id="current-year">2026</span> Eric54920</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

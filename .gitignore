@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 依赖与构建产物
+node_modules/
+dist/

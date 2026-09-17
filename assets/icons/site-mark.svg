@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-labelledby="title description">
+  <title id="title">Product collection mark</title>
+  <desc id="description">Three rounded product lines arranged inside a dark rounded square.</desc>
+  <defs>
+    <linearGradient id="background" x1="160" y1="84" x2="864" y2="940" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#303536"/>
+      <stop offset="0.5" stop-color="#1D2122"/>
+      <stop offset="1" stop-color="#121415"/>
+    </linearGradient>
+    <linearGradient id="pearl" x1="260" y1="260" x2="760" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3E7E4"/>
+    </linearGradient>
+    <clipPath id="shape">
+      <path d="M512 58C226 58 58 226 58 512s168 454 454 454 454-168 454-454S798 58 512 58Z"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#shape)">
+    <rect width="1024" height="1024" fill="url(#background)"/>
+    <path d="M-100 750C264 494 570 400 1120 438V1024H-100Z" fill="#FFFFFF" fill-opacity="0.035"/>
+  </g>
+
+  <path d="M512 58C226 58 58 226 58 512s168 454 454 454 454-168 454-454S798 58 512 58Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="4"/>
+
+  <rect x="250" y="282" width="524" height="104" rx="52" fill="url(#pearl)"/>
+  <rect x="250" y="460" width="376" height="104" rx="52" fill="url(#pearl)"/>
+  <rect x="250" y="638" width="458" height="104" rx="52" fill="#A8B5AE"/>
+</svg>
