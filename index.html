@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Eric54920 的个人网站，独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta name="description" content="Eric54920 的个人网站，独立设计和开发桌面与 Web 软件。Beatify 是一款本地优先的桌面音乐播放器；班务簿（Class Flow）是面向班主任的浏览器班级工作台。">
     <meta name="author" content="Eric54920">
     <meta name="application-name" content="Eric54920">
     <meta name="color-scheme" content="light">
@@ -17,13 +17,13 @@
     <link rel="preload" as="image" href="docs/screenshots/home.jpg" type="image/jpeg" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="assets/icons/site-mark.svg">
     <link rel="stylesheet" href="styles/global.css?v=8">
-    <link rel="stylesheet" href="styles/home.css?v=5">
+    <link rel="stylesheet" href="styles/home.css?v=6">
 
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Eric54920">
     <meta property="og:locale" content="zh_CN">
     <meta property="og:title" content="Eric54920｜独立软件与桌面工具">
-    <meta property="og:description" content="独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta property="og:description" content="独立设计和开发桌面与 Web 软件。Beatify 是一款本地优先的桌面音乐播放器；班务簿（Class Flow）是面向班主任的浏览器班级工作台。">
     <meta property="og:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
     <meta property="og:image:width" content="2864">
     <meta property="og:image:height" content="1904">
@@ -31,7 +31,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Eric54920｜独立软件与桌面工具">
-    <meta name="twitter:description" content="独立设计和开发桌面软件。Beatify 是一款本地优先的音乐播放器，支持本地资料库与 WebDAV。">
+    <meta name="twitter:description" content="独立设计和开发桌面与 Web 软件。Beatify 是一款本地优先的桌面音乐播放器；班务簿（Class Flow）是面向班主任的浏览器班级工作台。">
     <meta name="twitter:image" content="https://raw.githubusercontent.com/Eric54920/Beatify/main/docs/screenshots/home.jpg">
 
     <title>Eric54920｜独立软件与桌面工具</title>
@@ -75,6 +75,7 @@
 
         <nav class="desktop-nav" aria-label="主导航">
           <a href="#beatify">Beatify</a>
+          <a href="#class-flow">班务簿</a>
           <a href="#approach">方式</a>
           <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
@@ -96,6 +97,7 @@
 
       <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
         <a href="#beatify">Beatify</a>
+        <a href="#class-flow">班务簿</a>
         <a href="#approach">方式</a>
         <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
@@ -159,6 +161,8 @@
         </div>
       </section>
 
+      <span class="fragment-target" id="products" aria-hidden="true"></span>
+
       <section class="section atelier-beatify" id="beatify">
         <div class="atelier-section-heading">
           <div>
@@ -199,6 +203,51 @@
             </figure>
             <figure class="atelier-shot atelier-shot-secondary">
               <img src="docs/screenshots/lyrics.jpg" alt="Beatify 全屏同步歌词界面" width="1432" height="952" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section atelier-classflow" id="class-flow">
+        <div class="atelier-section-heading">
+          <div>
+            <p class="section-kicker">Web Application</p>
+            <h2>班务簿</h2>
+          </div>
+          <p>面向班主任与协作教师的班级工作台。花名册、考勤、座位、课表、奖惩、作业和成绩，都收在同一张簿上。</p>
+        </div>
+
+        <div class="atelier-case">
+          <div class="atelier-case-copy">
+            <span class="case-index">Class Flow / class.theguodong.com</span>
+            <h3>把一班人的事，放回一张簿上。</h3>
+            <p>数据按班级与学期归档，协作老师按模块获得查看或编辑权限。会员到期后班级转为只读，数据仍可查看和导出。</p>
+
+            <ul class="atelier-feature-list">
+              <li>花名册、考勤、座位与值日</li>
+              <li>课表、奖惩、作业与成绩</li>
+              <li>随机点名、计时、分组与课堂投票</li>
+              <li>按模块授权的协作教师权限</li>
+            </ul>
+
+            <div class="atelier-case-actions">
+              <a class="button button-primary" href="products/banwubu/index.html">查看产品详情</a>
+              <a class="text-link" href="https://class.theguodong.com" target="_blank" rel="noreferrer">
+                免费试用 15 天
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="atelier-gallery" aria-label="班务簿界面截图">
+            <figure class="atelier-shot">
+              <img src="docs/class_flow/Xnip2026-09-29_00-44-45.jpg" alt="班务簿班级概览界面" width="1406" height="1351" loading="lazy" decoding="async">
+            </figure>
+            <figure class="atelier-shot atelier-shot-secondary">
+              <img src="docs/class_flow/Xnip2026-09-29_00-45-08.jpg" alt="班务簿课表界面" width="1406" height="1351" loading="lazy" decoding="async">
             </figure>
           </div>
         </div>
@@ -263,6 +312,7 @@
         </div>
         <div class="footer-links">
           <a href="#beatify">Beatify</a>
+          <a href="#class-flow">班务簿</a>
           <a href="https://github.com/Eric54920" target="_blank" rel="noreferrer">GitHub</a>
           <span>© <span id="current-year">2026</span> Eric54920</span>
         </div>
